@@ -7,23 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19630EC721742EE9004C1CE0 /* CSRegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630EC621742EE9004C1CE0 /* CSRegView.swift */; };
+		19630ED221747F67004C1CE0 /* UserInfoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630ED121747F67004C1CE0 /* UserInfoVO.swift */; };
+		19630EDC2174874D004C1CE0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630EDB2174874D004C1CE0 /* Utils.swift */; };
+		19630EE32176CE07004C1CE0 /* mainLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 19630EE22176CE07004C1CE0 /* mainLogo.png */; };
+		19630EE921784E0E004C1CE0 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630EE821784E0E004C1CE0 /* SideBarController.swift */; };
+		19630EF92178559B004C1CE0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19630EF82178559A004C1CE0 /* SWRevealViewController.m */; };
+		19630EFB2178B513004C1CE0 /* SideTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630EFA2178B513004C1CE0 /* SideTableController.swift */; };
+		199F53CD218040000070D016 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F53CC218040000070D016 /* ProductListVC.swift */; };
+		199F53CF2180402D0070D016 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F53CE2180402D0070D016 /* ProductCell.swift */; };
+		199F53D1218040A70070D016 /* ProductInfoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F53D0218040A70070D016 /* ProductInfoVO.swift */; };
 		19AF84BB217042AA00329215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84BA217042AA00329215 /* AppDelegate.swift */; };
-		19AF84BD217042AA00329215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84BC217042AA00329215 /* ViewController.swift */; };
 		19AF84C0217042AA00329215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19AF84BE217042AA00329215 /* Main.storyboard */; };
 		19AF84C3217042AA00329215 /* WDrone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84C1217042AA00329215 /* WDrone.xcdatamodeld */; };
 		19AF84C5217042AB00329215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19AF84C4217042AB00329215 /* Assets.xcassets */; };
 		19AF84C8217042AB00329215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19AF84C6217042AB00329215 /* LaunchScreen.storyboard */; };
+		19AF84D02170435800329215 /* FirstPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84CF2170435800329215 /* FirstPageController.swift */; };
+		19AF84D52170447800329215 /* gif_bk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84D42170447700329215 /* gif_bk.swift */; };
+		19AF84F42170490F00329215 /* first_bg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 19AF84F32170490F00329215 /* first_bg.gif */; };
+		19AF84F621704A3B00329215 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84F521704A3B00329215 /* CSButton.swift */; };
+		19AF84F7217075A100329215 /* BMJUA_ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19AF84D12170444400329215 /* BMJUA_ttf.ttf */; };
+		19AF84F92170809700329215 /* CSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF84F82170809700329215 /* CSTextField.swift */; };
+		EA1FCA709DD69CA88600D7A9 /* Pods_WDrone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8675580AE30501643E8A868 /* Pods_WDrone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19630EC621742EE9004C1CE0 /* CSRegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSRegView.swift; sourceTree = "<group>"; };
+		19630ED121747F67004C1CE0 /* UserInfoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVO.swift; sourceTree = "<group>"; };
+		19630EDB2174874D004C1CE0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		19630EE22176CE07004C1CE0 /* mainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainLogo.png; sourceTree = "<group>"; };
+		19630EE821784E0E004C1CE0 /* SideBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
+		19630EF621785599004C1CE0 /* WDrone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDrone-Bridging-Header.h"; sourceTree = "<group>"; };
+		19630EF72178559A004C1CE0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		19630EF82178559A004C1CE0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		19630EFA2178B513004C1CE0 /* SideTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTableController.swift; sourceTree = "<group>"; };
+		199F53CC218040000070D016 /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		199F53CE2180402D0070D016 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		199F53D0218040A70070D016 /* ProductInfoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoVO.swift; sourceTree = "<group>"; };
 		19AF84B7217042AA00329215 /* WDrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19AF84BA217042AA00329215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19AF84BC217042AA00329215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19AF84BF217042AA00329215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19AF84C2217042AA00329215 /* WDrone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WDrone.xcdatamodel; sourceTree = "<group>"; };
 		19AF84C4217042AB00329215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19AF84C7217042AB00329215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19AF84C9217042AB00329215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19AF84CF2170435800329215 /* FirstPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageController.swift; sourceTree = "<group>"; };
+		19AF84D12170444400329215 /* BMJUA_ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMJUA_ttf.ttf; sourceTree = "<group>"; };
+		19AF84D42170447700329215 /* gif_bk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gif_bk.swift; sourceTree = "<group>"; };
+		19AF84F32170490F00329215 /* first_bg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = first_bg.gif; sourceTree = "<group>"; };
+		19AF84F521704A3B00329215 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
+		19AF84F82170809700329215 /* CSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTextField.swift; sourceTree = "<group>"; };
+		DC40139E310F47B1CFFA6607 /* Pods-WDrone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDrone.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDrone/Pods-WDrone.release.xcconfig"; sourceTree = "<group>"; };
+		E8675580AE30501643E8A868 /* Pods_WDrone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDrone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82BA1D4BA89AEAD810E94AD /* Pods-WDrone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDrone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDrone/Pods-WDrone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1FCA709DD69CA88600D7A9 /* Pods_WDrone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +79,8 @@
 			children = (
 				19AF84B9217042AA00329215 /* WDrone */,
 				19AF84B8217042AA00329215 /* Products */,
+				610B3045CE6A7100C615003B /* Pods */,
+				BB1030E678B44AD4BB1DAFE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +96,48 @@
 			isa = PBXGroup;
 			children = (
 				19AF84BA217042AA00329215 /* AppDelegate.swift */,
-				19AF84BC217042AA00329215 /* ViewController.swift */,
+				19AF84CF2170435800329215 /* FirstPageController.swift */,
+				19630EE821784E0E004C1CE0 /* SideBarController.swift */,
+				19630EFA2178B513004C1CE0 /* SideTableController.swift */,
 				19AF84BE217042AA00329215 /* Main.storyboard */,
 				19AF84C4217042AB00329215 /* Assets.xcassets */,
 				19AF84C6217042AB00329215 /* LaunchScreen.storyboard */,
 				19AF84C9217042AB00329215 /* Info.plist */,
 				19AF84C1217042AA00329215 /* WDrone.xcdatamodeld */,
+				19AF84D12170444400329215 /* BMJUA_ttf.ttf */,
+				19AF84D42170447700329215 /* gif_bk.swift */,
+				19AF84F32170490F00329215 /* first_bg.gif */,
+				19630EE22176CE07004C1CE0 /* mainLogo.png */,
+				19AF84F521704A3B00329215 /* CSButton.swift */,
+				19AF84F82170809700329215 /* CSTextField.swift */,
+				19630EC621742EE9004C1CE0 /* CSRegView.swift */,
+				19630ED121747F67004C1CE0 /* UserInfoVO.swift */,
+				19630EDB2174874D004C1CE0 /* Utils.swift */,
+				19630EF72178559A004C1CE0 /* SWRevealViewController.h */,
+				19630EF82178559A004C1CE0 /* SWRevealViewController.m */,
+				19630EF621785599004C1CE0 /* WDrone-Bridging-Header.h */,
+				199F53CC218040000070D016 /* ProductListVC.swift */,
+				199F53CE2180402D0070D016 /* ProductCell.swift */,
+				199F53D0218040A70070D016 /* ProductInfoVO.swift */,
 			);
 			path = WDrone;
+			sourceTree = "<group>";
+		};
+		610B3045CE6A7100C615003B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F82BA1D4BA89AEAD810E94AD /* Pods-WDrone.debug.xcconfig */,
+				DC40139E310F47B1CFFA6607 /* Pods-WDrone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB1030E678B44AD4BB1DAFE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8675580AE30501643E8A868 /* Pods_WDrone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19AF84CC217042AB00329215 /* Build configuration list for PBXNativeTarget "WDrone" */;
 			buildPhases = (
+				450F3EB92CDF7E2E058739DC /* [CP] Check Pods Manifest.lock */,
 				19AF84B3217042AA00329215 /* Sources */,
 				19AF84B4217042AA00329215 /* Frameworks */,
 				19AF84B5217042AA00329215 /* Resources */,
+				C65CDF2BC85BF93A2579B60D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +174,7 @@
 				TargetAttributes = {
 					19AF84B6217042AA00329215 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -125,7 +201,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19AF84F7217075A100329215 /* BMJUA_ttf.ttf in Resources */,
+				19AF84F42170490F00329215 /* first_bg.gif in Resources */,
 				19AF84C8217042AB00329215 /* LaunchScreen.storyboard in Resources */,
+				19630EE32176CE07004C1CE0 /* mainLogo.png in Resources */,
 				19AF84C5217042AB00329215 /* Assets.xcassets in Resources */,
 				19AF84C0217042AA00329215 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +212,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		450F3EB92CDF7E2E058739DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WDrone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65CDF2BC85BF93A2579B60D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WDrone/Pods-WDrone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDrone/Pods-WDrone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19AF84B3217042AA00329215 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19AF84BD217042AA00329215 /* ViewController.swift in Sources */,
+				19630EC721742EE9004C1CE0 /* CSRegView.swift in Sources */,
+				19630EFB2178B513004C1CE0 /* SideTableController.swift in Sources */,
 				19AF84BB217042AA00329215 /* AppDelegate.swift in Sources */,
+				19630EDC2174874D004C1CE0 /* Utils.swift in Sources */,
+				19AF84F621704A3B00329215 /* CSButton.swift in Sources */,
 				19AF84C3217042AA00329215 /* WDrone.xcdatamodeld in Sources */,
+				19AF84D02170435800329215 /* FirstPageController.swift in Sources */,
+				199F53CD218040000070D016 /* ProductListVC.swift in Sources */,
+				19630EE921784E0E004C1CE0 /* SideBarController.swift in Sources */,
+				199F53D1218040A70070D016 /* ProductInfoVO.swift in Sources */,
+				19630ED221747F67004C1CE0 /* UserInfoVO.swift in Sources */,
+				19630EF92178559B004C1CE0 /* SWRevealViewController.m in Sources */,
+				19AF84D52170447800329215 /* gif_bk.swift in Sources */,
+				19AF84F92170809700329215 /* CSTextField.swift in Sources */,
+				199F53CF2180402D0070D016 /* ProductCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +414,10 @@
 		};
 		19AF84CD217042AB00329215 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82BA1D4BA89AEAD810E94AD /* Pods-WDrone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MC79HSTU4;
 				INFOPLIST_FILE = WDrone/Info.plist;
@@ -295,6 +427,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.WDrone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WDrone/WDrone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +436,10 @@
 		};
 		19AF84CE217042AB00329215 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC40139E310F47B1CFFA6607 /* Pods-WDrone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MC79HSTU4;
 				INFOPLIST_FILE = WDrone/Info.plist;
@@ -311,8 +447,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.WDrone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WDrone/WDrone-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
