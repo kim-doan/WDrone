@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class SideBarController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SideBarController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     let userinfo: UserInfoVO = UserInfoVO.sharedInstance
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -37,9 +37,10 @@ class SideBarController: UIViewController, UITableViewDataSource, UITableViewDel
         
         scanBtn.frame = CGRect(x: 0, y: 0, width: 300, height: 40);
         scanBtn.setTitle("검색 시작", for: UIControl.State.normal)
-        scanBtn.center = CGPoint(x: self.view.frame.size.width / 2, y: self.view.frame.size.height / 2 + 300);
+        scanBtn.center = CGPoint(x: self.view.frame.size.width / 2, y: self.view.frame.size.height / 2 + 320);
         scanBtn.addTarget(self, action: #selector(scanBtnAction(_:)), for: .touchUpInside);
         self.view.addSubview(scanBtn)
+        CSLoader.instance.hideLoader()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

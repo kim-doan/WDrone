@@ -13,13 +13,14 @@ class FirstPageController : UIViewController {
     @IBOutlet weak var gifView: UIImageView!
     
     var regView = CSRegView(frame: CGRect(x: 50, y: 50, width: 350, height: 400));
-    
+
     let regBtn = CSButton(type: .bgClear)
     let loginBtn = CSButton(type: .bgWhite)
     let connectBtn = CSButton(type: .bgClear)
     let connectBtn2 = CSButton(type: .bgClear)
     let idField = CSTextField()
     let passField = CSTextField()
+    var timer : Timer?
     
     
     override func viewDidLoad() {
@@ -132,6 +133,7 @@ class FirstPageController : UIViewController {
                 uvc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve // 2
                 self.present(uvc, animated: true) // 3
                 print("userinfo \(userinfo.name)");
+                CSLoader.instance.showLoader();
             } else {
                 self.alert("로그인에 실패하였습니다.");
                 return;

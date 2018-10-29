@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194C1F792186A8910066BA24 /* ProductManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1F782186A8910066BA24 /* ProductManagementVC.swift */; };
+		194C1F7B2186AA080066BA24 /* ProductCell_m.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1F7A2186AA080066BA24 /* ProductCell_m.swift */; };
+		194C1F7D2186DB1D0066BA24 /* ProductAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1F7C2186DB1D0066BA24 /* ProductAddController.swift */; };
+		194C1F9D2186E8F00066BA24 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1F9B2186E8F00066BA24 /* HoshiTextField.swift */; };
+		194C1F9E2186E8F00066BA24 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1F9C2186E8F00066BA24 /* TextFieldEffects.swift */; };
+		194C1FA02186E9640066BA24 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1F9F2186E9640066BA24 /* AkiraTextField.swift */; };
+		194C1FA4218700380066BA24 /* CSLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C1FA3218700380066BA24 /* CSLoader.swift */; };
+		194C1FAA2187068A0066BA24 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 194C1FA92187068A0066BA24 /* loader.gif */; };
 		19630EC721742EE9004C1CE0 /* CSRegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630EC621742EE9004C1CE0 /* CSRegView.swift */; };
 		19630ED221747F67004C1CE0 /* UserInfoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630ED121747F67004C1CE0 /* UserInfoVO.swift */; };
 		19630EDC2174874D004C1CE0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19630EDB2174874D004C1CE0 /* Utils.swift */; };
@@ -32,6 +40,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		194C1F782186A8910066BA24 /* ProductManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManagementVC.swift; sourceTree = "<group>"; };
+		194C1F7A2186AA080066BA24 /* ProductCell_m.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell_m.swift; sourceTree = "<group>"; };
+		194C1F7C2186DB1D0066BA24 /* ProductAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAddController.swift; sourceTree = "<group>"; };
+		194C1F9A2186E8F00066BA24 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		194C1F9B2186E8F00066BA24 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		194C1F9C2186E8F00066BA24 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		194C1F9F2186E9640066BA24 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		194C1FA3218700380066BA24 /* CSLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLoader.swift; sourceTree = "<group>"; };
+		194C1FA92187068A0066BA24 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		19630EC621742EE9004C1CE0 /* CSRegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSRegView.swift; sourceTree = "<group>"; };
 		19630ED121747F67004C1CE0 /* UserInfoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVO.swift; sourceTree = "<group>"; };
 		19630EDB2174874D004C1CE0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -99,26 +116,35 @@
 				19AF84CF2170435800329215 /* FirstPageController.swift */,
 				19630EE821784E0E004C1CE0 /* SideBarController.swift */,
 				19630EFA2178B513004C1CE0 /* SideTableController.swift */,
+				194C1F782186A8910066BA24 /* ProductManagementVC.swift */,
+				194C1F7A2186AA080066BA24 /* ProductCell_m.swift */,
+				199F53CC218040000070D016 /* ProductListVC.swift */,
+				199F53CE2180402D0070D016 /* ProductCell.swift */,
+				194C1F7C2186DB1D0066BA24 /* ProductAddController.swift */,
 				19AF84BE217042AA00329215 /* Main.storyboard */,
 				19AF84C4217042AB00329215 /* Assets.xcassets */,
 				19AF84C6217042AB00329215 /* LaunchScreen.storyboard */,
 				19AF84C9217042AB00329215 /* Info.plist */,
 				19AF84C1217042AA00329215 /* WDrone.xcdatamodeld */,
-				19AF84D12170444400329215 /* BMJUA_ttf.ttf */,
-				19AF84D42170447700329215 /* gif_bk.swift */,
-				19AF84F32170490F00329215 /* first_bg.gif */,
-				19630EE22176CE07004C1CE0 /* mainLogo.png */,
+				194C1FA3218700380066BA24 /* CSLoader.swift */,
 				19AF84F521704A3B00329215 /* CSButton.swift */,
 				19AF84F82170809700329215 /* CSTextField.swift */,
+				194C1F9B2186E8F00066BA24 /* HoshiTextField.swift */,
+				194C1F9A2186E8F00066BA24 /* TextFieldEffects.h */,
+				194C1F9C2186E8F00066BA24 /* TextFieldEffects.swift */,
+				194C1F9F2186E9640066BA24 /* AkiraTextField.swift */,
 				19630EC621742EE9004C1CE0 /* CSRegView.swift */,
+				199F53D0218040A70070D016 /* ProductInfoVO.swift */,
 				19630ED121747F67004C1CE0 /* UserInfoVO.swift */,
 				19630EDB2174874D004C1CE0 /* Utils.swift */,
 				19630EF72178559A004C1CE0 /* SWRevealViewController.h */,
 				19630EF82178559A004C1CE0 /* SWRevealViewController.m */,
 				19630EF621785599004C1CE0 /* WDrone-Bridging-Header.h */,
-				199F53CC218040000070D016 /* ProductListVC.swift */,
-				199F53CE2180402D0070D016 /* ProductCell.swift */,
-				199F53D0218040A70070D016 /* ProductInfoVO.swift */,
+				19AF84D12170444400329215 /* BMJUA_ttf.ttf */,
+				19AF84D42170447700329215 /* gif_bk.swift */,
+				194C1FA92187068A0066BA24 /* loader.gif */,
+				19AF84F32170490F00329215 /* first_bg.gif */,
+				19630EE22176CE07004C1CE0 /* mainLogo.png */,
 			);
 			path = WDrone;
 			sourceTree = "<group>";
@@ -205,6 +231,7 @@
 				19AF84F42170490F00329215 /* first_bg.gif in Resources */,
 				19AF84C8217042AB00329215 /* LaunchScreen.storyboard in Resources */,
 				19630EE32176CE07004C1CE0 /* mainLogo.png in Resources */,
+				194C1FAA2187068A0066BA24 /* loader.gif in Resources */,
 				19AF84C5217042AB00329215 /* Assets.xcassets in Resources */,
 				19AF84C0217042AA00329215 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194C1FA4218700380066BA24 /* CSLoader.swift in Sources */,
 				19630EC721742EE9004C1CE0 /* CSRegView.swift in Sources */,
+				194C1F7D2186DB1D0066BA24 /* ProductAddController.swift in Sources */,
 				19630EFB2178B513004C1CE0 /* SideTableController.swift in Sources */,
 				19AF84BB217042AA00329215 /* AppDelegate.swift in Sources */,
 				19630EDC2174874D004C1CE0 /* Utils.swift in Sources */,
@@ -264,10 +293,15 @@
 				19AF84C3217042AA00329215 /* WDrone.xcdatamodeld in Sources */,
 				19AF84D02170435800329215 /* FirstPageController.swift in Sources */,
 				199F53CD218040000070D016 /* ProductListVC.swift in Sources */,
+				194C1FA02186E9640066BA24 /* AkiraTextField.swift in Sources */,
 				19630EE921784E0E004C1CE0 /* SideBarController.swift in Sources */,
 				199F53D1218040A70070D016 /* ProductInfoVO.swift in Sources */,
 				19630ED221747F67004C1CE0 /* UserInfoVO.swift in Sources */,
+				194C1F9D2186E8F00066BA24 /* HoshiTextField.swift in Sources */,
+				194C1F792186A8910066BA24 /* ProductManagementVC.swift in Sources */,
+				194C1F9E2186E8F00066BA24 /* TextFieldEffects.swift in Sources */,
 				19630EF92178559B004C1CE0 /* SWRevealViewController.m in Sources */,
+				194C1F7B2186AA080066BA24 /* ProductCell_m.swift in Sources */,
 				19AF84D52170447800329215 /* gif_bk.swift in Sources */,
 				19AF84F92170809700329215 /* CSTextField.swift in Sources */,
 				199F53CF2180402D0070D016 /* ProductCell.swift in Sources */,

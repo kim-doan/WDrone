@@ -14,8 +14,8 @@ class ProductListVC: UITableViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var timer : Timer?
     override func viewDidLoad() {
-        
-//        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ProductListVC.reloadProduct), userInfo: nil, repeats: true) // 1초마다 갱신
+        let backBtn = UIBarButtonItem(title: "닫기", style: .plain, target: self, action: #selector(close(_:)));
+        self.navigationItem.leftBarButtonItem = backBtn;
         startTimer();
     }
     
@@ -45,7 +45,7 @@ class ProductListVC: UITableViewController {
     @objc func startTimer() {
         if timer == nil {
             timer =  Timer.scheduledTimer(
-                timeInterval: TimeInterval(3.0),
+                timeInterval: TimeInterval(2.0),
                 target      : self,
                 selector    : #selector(ProductListVC.reloadProduct),
                 userInfo    : nil,
@@ -92,37 +92,47 @@ class ProductListVC: UITableViewController {
         
         tableView.reloadData() // 테이블 갱신
     }
-    @IBAction func nextpage(_ sender: Any) {
-        self.performSegue(withIdentifier: "search_cancel", sender: self)
-        stopTimer()
-    }
+    
     @IBAction func stopAction(_ sender: UIBarButtonItem) {
         let param: Parameters = [
             "stat" : "0"
         ]
         let alamo = Alamofire.request("http://35.194.119.42:8080/drone", method: .post, parameters: param, encoding: URLEncoding.httpBody);
-        let alamo2 = Alamofire.request("http://35.194.119.42:8080/productreload", method: .get, encoding: URLEncoding.httpBody);
 
         alamo.responseString() { response in
             print("post=\(response.result.value!)");
 
             if response.result.value! == "0" {
-                self.stopTimer()
-                print("작동 성공");
+                print("드론 작동 중지");
+                self.alert("드론 작동 중지")
             } else {
                 print("작동 실패");
+                self.alert("에러: 중지 실패")
+            }
+        }
+    }
+    
+    @objc func close(_ sender: Any) {
+        let param: Parameters = [
+            "stat" : "0"
+        ]
+        let alamo = Alamofire.request("http://35.194.119.42:8080/drone", method: .post, parameters: param, encoding: URLEncoding.httpBody);
+        let alamo2 = Alamofire.request("http://35.194.119.42:8080/productreload", method: .get, encoding: URLEncoding.httpBody);
+        
+        alamo.responseString() { response in
+            if response.result.value! == "0" {
+                self.stopTimer()
+                print("드론, 타이머 종료")
             }
         }
         
         alamo2.responseString() { response in
-            print("post=\(response.result.value!)");
-            
-            if response.result.value! == "0" {
+            if response.result.value! == "" {
                 self.stopTimer()
-                print("작동 실패");
-            } else {
-                print("작동 성공");
+                print("상품 스택 리로드")
             }
         }
+        
+        self.presentingViewController?.dismiss(animated: true);
     }
 }

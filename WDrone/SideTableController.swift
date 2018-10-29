@@ -89,8 +89,8 @@ class SideTableController : UITableViewController {
         return cell!
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            let uv = self.storyboard?.instantiateViewController(withIdentifier: "_Mypage");
+        if indexPath.row == 2 {
+            let uv = self.storyboard?.instantiateViewController(withIdentifier: "_ProductManage");
             self.present(uv!, animated: true) {
                 self.revealViewController().revealToggle(self);
             }

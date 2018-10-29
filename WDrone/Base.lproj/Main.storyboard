@@ -265,24 +265,344 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="목록" id="C5l-a7-1vo">
-                        <barButtonItem key="leftBarButtonItem" systemItem="pause" id="cy9-7K-ueS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="pause" id="cy9-7K-ueS">
                             <connections>
                                 <action selector="stopAction:" destination="ZRX-FU-y9w" id="Ql5-gZ-Kkc"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="rH0-O8-B1Y">
-                            <connections>
-                                <action selector="nextpage:" destination="ZRX-FU-y9w" id="LxO-Yx-IYm"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="wBA-1U-iPq" kind="showDetail" identifier="search_cancel" id="xlg-hD-7Xh"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqg-4a-LsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2246" y="1564"/>
+            <point key="canvasLocation" x="4130.3999999999996" y="1563.5467980295566"/>
+        </scene>
+        <!--재고 목록-->
+        <scene sceneID="8ro-cV-I2f">
+            <objects>
+                <tableViewController id="DpS-aM-Ogr" customClass="ProductManagementVC" customModule="WDrone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="z3B-xL-Ve9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="8Xx-NW-Yqx">
+                            <rect key="frame" x="0.0" y="188" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="productCell" rowHeight="80" id="HHJ-kg-xJk" customClass="ProductCell_m" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HHJ-kg-xJk" id="zqm-mc-5cI">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="79.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품 코드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbE-L4-npM">
+                                            <rect key="frame" x="26" y="11" width="232" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="6tq-EC-TFn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품 이름" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-lL-Cnf">
+                                            <rect key="frame" x="26" y="37" width="232" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Wqh-Yp-LMH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-01-01" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj3-wu-ZLH">
+                                            <rect key="frame" x="268" y="21" width="65" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="4Su-zn-pjK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-12-31" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-gj-Sw5">
+                                            <rect key="frame" x="268" y="47" width="65" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="3sT-cE-jRD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7d8-gj-Sw5" firstAttribute="top" secondItem="zj3-wu-ZLH" secondAttribute="bottom" constant="10" id="1XV-0D-L0o"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zj3-wu-ZLH" secondAttribute="trailing" id="5bc-mT-wSD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7d8-gj-Sw5" secondAttribute="trailing" id="B0k-ck-bvk"/>
+                                        <constraint firstItem="zj3-wu-ZLH" firstAttribute="leading" secondItem="nbE-L4-npM" secondAttribute="trailing" constant="10" id="S19-Qf-wYX"/>
+                                        <constraint firstItem="zj3-wu-ZLH" firstAttribute="top" secondItem="zqm-mc-5cI" secondAttribute="topMargin" constant="10" id="UkW-nC-hQV"/>
+                                        <constraint firstItem="7d8-gj-Sw5" firstAttribute="top" secondItem="nbE-L4-npM" secondAttribute="bottom" constant="15" id="gRK-EJ-vfR"/>
+                                        <constraint firstItem="0hb-lL-Cnf" firstAttribute="top" secondItem="nbE-L4-npM" secondAttribute="bottom" constant="5" id="kCP-8O-55V"/>
+                                        <constraint firstItem="nbE-L4-npM" firstAttribute="leading" secondItem="zqm-mc-5cI" secondAttribute="leadingMargin" constant="10" id="m3v-Kt-r2I"/>
+                                        <constraint firstItem="0hb-lL-Cnf" firstAttribute="leading" secondItem="zqm-mc-5cI" secondAttribute="leadingMargin" constant="10" id="sDa-Gl-fhT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7d8-gj-Sw5" secondAttribute="bottom" constant="10" id="xHm-Dt-4QN"/>
+                                        <constraint firstItem="7d8-gj-Sw5" firstAttribute="leading" secondItem="0hb-lL-Cnf" secondAttribute="trailing" constant="10" id="yBV-I4-pEf"/>
+                                        <constraint firstItem="nbE-L4-npM" firstAttribute="top" secondItem="zqm-mc-5cI" secondAttribute="topMargin" id="zyG-Gp-zKF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="0hb-lL-Cnf" id="aRY-2w-iAe"/>
+                                    <outlet property="inputdate" destination="zj3-wu-ZLH" id="Ng3-q4-del"/>
+                                    <outlet property="outputdate" destination="7d8-gj-Sw5" id="ClJ-EJ-eLg"/>
+                                    <outlet property="productId" destination="nbE-L4-npM" id="bQZ-uv-n8g"/>
+                                    <outlet property="productInput" destination="zj3-wu-ZLH" id="Uq8-kf-jjs"/>
+                                    <outlet property="productName" destination="0hb-lL-Cnf" id="Vmp-FR-F0X"/>
+                                    <outlet property="productOutput" destination="7d8-gj-Sw5" id="9Yc-QY-XXz"/>
+                                    <outlet property="subject" destination="nbE-L4-npM" id="fbA-bn-Pgo"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="productCellWithImage" rowHeight="80" id="35B-j9-Qoi" customClass="ProductCell_m" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="108" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="35B-j9-Qoi" id="N86-6V-YyZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="79.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-79-pgA">
+                                            <rect key="frame" x="16.000000000000004" y="11" width="50.333333333333343" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="AOW-U0-kmD"/>
+                                                <constraint firstAttribute="height" constant="64" id="Qc9-rk-bWm"/>
+                                                <constraint firstAttribute="width" secondItem="ZhT-79-pgA" secondAttribute="height" multiplier="56:71" id="k2y-0U-RnU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품 코드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-xe-whO">
+                                            <rect key="frame" x="76.333333333333329" y="11" width="51.999999999999986" height="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품 이름" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPk-6t-4xf">
+                                            <rect key="frame" x="76.333333333333329" y="33" width="246.66666666666669" height="14.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2018-12-31" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-oR-bpA">
+                                            <rect key="frame" x="261" y="49" width="61" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2018-01-01" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4l-Ez-X5J">
+                                            <rect key="frame" x="261" y="11" width="61" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cPk-6t-4xf" firstAttribute="leading" secondItem="ZhT-79-pgA" secondAttribute="trailing" constant="10" id="68U-F1-FRy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cPk-6t-4xf" secondAttribute="trailing" constant="10" id="77G-7X-pj8"/>
+                                        <constraint firstItem="ZhT-79-pgA" firstAttribute="leading" secondItem="N86-6V-YyZ" secondAttribute="leadingMargin" id="KVV-3J-n4p"/>
+                                        <constraint firstItem="6Kf-xe-whO" firstAttribute="leading" secondItem="ZhT-79-pgA" secondAttribute="trailing" constant="10" id="PA2-on-Efo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZhT-79-pgA" secondAttribute="bottom" id="Qet-UR-9BL"/>
+                                        <constraint firstItem="6Kf-xe-whO" firstAttribute="top" secondItem="N86-6V-YyZ" secondAttribute="topMargin" id="Wz1-VQ-Xd3"/>
+                                        <constraint firstItem="ZhT-79-pgA" firstAttribute="top" secondItem="N86-6V-YyZ" secondAttribute="topMargin" id="h5s-ds-wl0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cPk-6t-4xf" secondAttribute="bottom" constant="23" id="osY-JM-JKq"/>
+                                        <constraint firstItem="cPk-6t-4xf" firstAttribute="top" secondItem="6Kf-xe-whO" secondAttribute="bottom" constant="5" id="sOi-QP-qJB"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="cPk-6t-4xf" id="ypt-dA-jj7"/>
+                                    <outlet property="img" destination="ZhT-79-pgA" id="IXq-Ld-LYh"/>
+                                    <outlet property="inputdate" destination="h4l-Ez-X5J" id="4Fv-vV-Ssg"/>
+                                    <outlet property="outputdate" destination="uPt-oR-bpA" id="3bA-VC-Lyl"/>
+                                    <outlet property="productId" destination="6Kf-xe-whO" id="ONw-9f-SJ3"/>
+                                    <outlet property="productImg" destination="ZhT-79-pgA" id="Ufm-Qe-Qw5"/>
+                                    <outlet property="productInput" destination="h4l-Ez-X5J" id="8X1-j6-DYa"/>
+                                    <outlet property="productName" destination="cPk-6t-4xf" id="phl-Tr-Mu3"/>
+                                    <outlet property="productOutput" destination="uPt-oR-bpA" id="rXf-PP-PzP"/>
+                                    <outlet property="subject" destination="6Kf-xe-whO" id="1lO-19-jIK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DpS-aM-Ogr" id="e4I-Dt-hId"/>
+                            <outlet property="delegate" destination="DpS-aM-Ogr" id="RAP-DB-bXq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="재고 목록" id="SRK-od-rRw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KOw-N5-piI">
+                            <connections>
+                                <segue destination="Uft-2j-Y4o" kind="show" id="b88-Ux-dfG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVv-6n-cid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="1558"/>
+        </scene>
+        <!--상품 추가-->
+        <scene sceneID="C2H-ZI-qMv">
+            <objects>
+                <viewController id="Uft-2j-Y4o" customClass="ProductAddController" customModule="WDrone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yti-VX-FCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="물품 정보를 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ3-mQ-f8a">
+                                <rect key="frame" x="158" y="152" width="193" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BMJUA" family="BM JUA_TTF" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add2" translatesAutoresizingMaskIntoConstraints="NO" id="AGQ-6b-amT">
+                                <rect key="frame" x="39" y="112" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="상품코드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cke-KJ-Ou8" customClass="HoshiTextField" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="39" y="240" width="312" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BMJUA" family="BM JUA_TTF" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="상품이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-PW-hGS" customClass="HoshiTextField" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="39" y="296" width="312" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BMJUA" family="BM JUA_TTF" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="상품수량" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25P-k4-8uF" customClass="HoshiTextField" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="39" y="352" width="312" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BMJUA" family="BM JUA_TTF" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="반입날짜" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRJ-b4-ufs" customClass="HoshiTextField" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="39" y="408" width="312" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BMJUA" family="BM JUA_TTF" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="반출날짜" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xzb-dY-1gd" customClass="HoshiTextField" customModule="WDrone" customModuleProvider="target">
+                                <rect key="frame" x="39" y="464" width="312" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BMJUA" family="BM JUA_TTF" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lJs-SO-Ofz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="상품 추가" id="T5r-Ma-RL1">
+                        <rightBarButtonItems>
+                            <barButtonItem title="저장" id="2be-tj-Ops">
+                                <connections>
+                                    <action selector="save:" destination="Uft-2j-Y4o" id="1YC-nf-Ra1"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="3oV-ah-it6">
+                                <connections>
+                                    <action selector="pick:" destination="Uft-2j-Y4o" id="57J-ia-5Kf"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navigationItem" destination="T5r-Ma-RL1" id="Xjn-cx-EiF"/>
+                        <outlet property="preview" destination="AGQ-6b-amT" id="MNs-sB-db7"/>
+                        <outlet property="productAmount" destination="25P-k4-8uF" id="g4v-jf-cPj"/>
+                        <outlet property="productId" destination="cke-KJ-Ou8" id="7Je-f8-nEg"/>
+                        <outlet property="productImage" destination="3oV-ah-it6" id="wlU-Re-Qb5"/>
+                        <outlet property="productInput" destination="hRJ-b4-ufs" id="ia0-Bd-saU"/>
+                        <outlet property="productName" destination="MUv-PW-hGS" id="DFr-eJ-Ug2"/>
+                        <outlet property="productOutput" destination="Xzb-dY-1gd" id="b58-Ml-bmE"/>
+                        <outlet property="productSave" destination="2be-tj-Ops" id="AJz-Ju-dsk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyF-IY-F09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520.8" y="1557.6354679802957"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="xuu-0o-2Zz">
@@ -413,16 +733,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fl4-t9-l55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521" y="1564"/>
+            <point key="canvasLocation" x="3405.5999999999999" y="1563.5467980295566"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vv4-Qb-eP3">
+            <objects>
+                <navigationController storyboardIdentifier="_ProductManage" automaticallyAdjustsScrollViewInsets="NO" id="Vpv-8I-Qb2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8b8-aU-Rcg">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DpS-aM-Ogr" kind="relationship" relationship="rootViewController" id="dp8-2a-Ch4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yby-l2-gyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="1557.6354679802957"/>
         </scene>
     </scenes>
     <resources>
         <image name="account" width="90" height="90"/>
+        <image name="add2" width="256" height="256"/>
         <image name="box" width="64" height="64"/>
         <image name="menu" width="30" height="30"/>
         <image name="notification" width="32" height="32"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="xlg-hD-7Xh"/>
-    </inferredMetricsTieBreakers>
 </document>
